@@ -10,7 +10,6 @@ import {
   Phone, 
   Mail, 
   MapPin, 
-  Clock, 
   Users, 
   Award, 
   Droplets, 
@@ -203,7 +202,7 @@ export default function Home() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-              For over 35 years, we've provided trusted, compliant, and on-demand oil recovery services across NY, NJ, and PA.
+              For over 35 years, we&apos;ve provided trusted, compliant, and on-demand oil recovery services across NY, NJ, and PA.
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -410,7 +409,7 @@ export default function Home() {
                     <Star key={i} className="w-5 h-5 text-accent-orange fill-current" />
                   ))}
                 </div>
-                <p className="text-gray-600 mb-4 italic">"{testimonial.text}"</p>
+                <p className="text-gray-600 mb-4 italic">&quot;{testimonial.text}&quot;</p>
                 <div>
                   <div className="font-semibold text-primary-blue">{testimonial.name}</div>
                   <div className="text-sm text-gray-500">{testimonial.company}</div>
@@ -491,7 +490,7 @@ export default function Home() {
               >
                 <CheckCircle className="w-12 h-12 mx-auto mb-4" />
                 <h3 className="text-xl font-semibold mb-2">Thank You!</h3>
-                <p>Your quote request has been submitted. We'll contact you within 24 hours.</p>
+                <p>Your quote request has been submitted. We&apos;ll contact you within 24 hours.</p>
               </motion.div>
             ) : (
               <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
