@@ -217,6 +217,21 @@ export default function Home() {
                 <ChevronRight className="ml-2 w-5 h-5" />
               </a>
             </motion.div>
+            
+            {/* Hero Image */}
+            <motion.div
+              className="mt-12"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.6 }}
+            >
+              <img
+                src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                alt="Advanced Oil Recovery tanker truck on a road"
+                loading="lazy"
+                className="w-full max-w-4xl mx-auto rounded-lg shadow-2xl"
+              />
+            </motion.div>
           </div>
         </div>
       </section>
@@ -295,6 +310,14 @@ export default function Home() {
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="bg-white p-6 rounded-lg shadow-lg">
+                <div className="mb-4">
+                  <img
+                    src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80"
+                    alt="Professional oil collection and disposal services"
+                    loading="lazy"
+                    className="w-full h-48 object-cover rounded-lg mb-4"
+                  />
+                </div>
                 <h3 className="text-xl font-heading font-semibold text-primary-blue mb-4">Oil & Petroleum Services</h3>
                 <ul className="space-y-2 text-gray-600">
                   <li className="flex items-center">
@@ -316,6 +339,14 @@ export default function Home() {
                 </ul>
               </div>
               <div className="bg-white p-6 rounded-lg shadow-lg">
+                <div className="mb-4">
+                  <img
+                    src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80"
+                    alt="Commercial storage tank installation and maintenance"
+                    loading="lazy"
+                    className="w-full h-48 object-cover rounded-lg mb-4"
+                  />
+                </div>
                 <h3 className="text-xl font-heading font-semibold text-primary-blue mb-4">Tank & Storage Services</h3>
                 <ul className="space-y-2 text-gray-600">
                   <li className="flex items-center">
@@ -337,6 +368,14 @@ export default function Home() {
                 </ul>
               </div>
               <div className="bg-white p-6 rounded-lg shadow-lg">
+                <div className="mb-4">
+                  <img
+                    src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80"
+                    alt="Emergency spill response team in action"
+                    loading="lazy"
+                    className="w-full h-48 object-cover rounded-lg mb-4"
+                  />
+                </div>
                 <h3 className="text-xl font-heading font-semibold text-primary-blue mb-4">Emergency Response</h3>
                 <ul className="space-y-2 text-gray-600">
                   <li className="flex items-center">
@@ -358,6 +397,14 @@ export default function Home() {
                 </ul>
               </div>
               <div className="bg-white p-6 rounded-lg shadow-lg">
+                <div className="mb-4">
+                  <img
+                    src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80"
+                    alt="Environmental consulting and waste management services"
+                    loading="lazy"
+                    className="w-full h-48 object-cover rounded-lg mb-4"
+                  />
+                </div>
                 <h3 className="text-xl font-heading font-semibold text-primary-blue mb-4">Additional Services</h3>
                 <ul className="space-y-2 text-gray-600">
                   <li className="flex items-center">
@@ -378,6 +425,55 @@ export default function Home() {
                   </li>
                 </ul>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Fleet & Capabilities Section */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary-blue mb-4">
+              Our Fleet & Capabilities
+            </h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              State-of-the-art equipment and vehicles to handle any petroleum or environmental service need
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="bg-warm-gray p-6 rounded-lg shadow-lg">
+              <img
+                src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80"
+                alt="Professional vacuum truck for oil collection"
+                loading="lazy"
+                className="w-full h-48 object-cover rounded-lg mb-4"
+              />
+              <h3 className="text-xl font-heading font-semibold text-primary-blue mb-2">Vacuum Trucks</h3>
+              <p className="text-gray-600">High-capacity vacuum trucks for efficient oil collection and transportation</p>
+            </div>
+
+            <div className="bg-warm-gray p-6 rounded-lg shadow-lg">
+              <img
+                src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80"
+                alt="Bulk petroleum tanker for large-scale transport"
+                loading="lazy"
+                className="w-full h-48 object-cover rounded-lg mb-4"
+              />
+              <h3 className="text-xl font-heading font-semibold text-primary-blue mb-2">Bulk Tankers</h3>
+              <p className="text-gray-600">Large-capacity tankers for bulk petroleum and waste oil transportation</p>
+            </div>
+
+            <div className="bg-warm-gray p-6 rounded-lg shadow-lg">
+              <img
+                src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80"
+                alt="Emergency response vehicle with spill containment equipment"
+                loading="lazy"
+                className="w-full h-48 object-cover rounded-lg mb-4"
+              />
+              <h3 className="text-xl font-heading font-semibold text-primary-blue mb-2">Emergency Response</h3>
+              <p className="text-gray-600">Specialized vehicles equipped for 24/7 spill response and containment</p>
             </div>
           </div>
         </div>
@@ -420,6 +516,50 @@ export default function Home() {
         </div>
       </section>
 
+      {/* About Us Section */}
+      <section className="py-20 bg-warm-gray">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              <div>
+                <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary-blue mb-6">
+                  Trusted Professionals You Can Count On
+                </h2>
+                <p className="text-lg text-gray-600 mb-6">
+                  Our experienced team of certified professionals brings decades of expertise in petroleum and environmental services. We&apos;re committed to safety, compliance, and delivering exceptional results for every client.
+                </p>
+                <div className="grid grid-cols-2 gap-6">
+                  <div>
+                    <div className="text-2xl font-heading font-bold text-accent-orange mb-2">35+</div>
+                    <div className="text-sm text-gray-600">Years Experience</div>
+                  </div>
+                  <div>
+                    <div className="text-2xl font-heading font-bold text-accent-orange mb-2">100%</div>
+                    <div className="text-sm text-gray-600">Compliance Rate</div>
+                  </div>
+                  <div>
+                    <div className="text-2xl font-heading font-bold text-accent-orange mb-2">24/7</div>
+                    <div className="text-sm text-gray-600">Emergency Response</div>
+                  </div>
+                  <div>
+                    <div className="text-2xl font-heading font-bold text-accent-orange mb-2">1500+</div>
+                    <div className="text-sm text-gray-600">Projects Completed</div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <img
+                  src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+                  alt="Professional team member in safety gear working on oil recovery equipment"
+                  loading="lazy"
+                  className="w-full h-96 object-cover rounded-lg shadow-xl"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Service Areas */}
       <section id="service-areas" className="py-20 bg-warm-gray">
         <div className="container mx-auto px-4">
@@ -456,13 +596,30 @@ export default function Home() {
             ))}
           </div>
 
-          {/* Map Placeholder */}
-          <div className="mt-12 bg-white rounded-lg shadow-lg p-8 text-center">
-            <h3 className="text-xl font-heading font-semibold text-primary-blue mb-4">
-              Interactive Service Map
+          {/* Service Area Map */}
+          <div className="mt-12 bg-white rounded-lg shadow-lg p-8">
+            <h3 className="text-xl font-heading font-semibold text-primary-blue mb-6 text-center">
+              Our Service Coverage
             </h3>
-            <div className="bg-gray-200 h-64 rounded-lg flex items-center justify-center">
-              <p className="text-gray-500">Map integration placeholder</p>
+            <img
+              src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80"
+              alt="Map of New York, New Jersey, and Pennsylvania showing service coverage areas"
+              loading="lazy"
+              className="w-full h-64 object-cover rounded-lg"
+            />
+            <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-4 text-center">
+              <div className="bg-primary-blue text-white p-4 rounded-lg">
+                <h4 className="font-semibold mb-2">New York</h4>
+                <p className="text-sm">Full state coverage including NYC, Buffalo, Rochester, Albany</p>
+              </div>
+              <div className="bg-accent-orange text-white p-4 rounded-lg">
+                <h4 className="font-semibold mb-2">New Jersey</h4>
+                <p className="text-sm">Complete service across Newark, Jersey City, Paterson, Trenton</p>
+              </div>
+              <div className="bg-deep-green text-white p-4 rounded-lg">
+                <h4 className="font-semibold mb-2">Pennsylvania</h4>
+                <p className="text-sm">Statewide coverage from Philadelphia to Pittsburgh</p>
+              </div>
             </div>
           </div>
         </div>
